@@ -3,8 +3,8 @@ KindleRSSDaily
 
 File framework and templates are from 'dailykindle' https://github.com/pelletier/dailykindle.
 
-1.Modified it to support Chinese.
-2.Updated the out-dated API of feedparder
+1. Modified it to support Chinese.
+2. Updated the out-dated API of feedparder
 
 
 How to use:
