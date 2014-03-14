@@ -7,6 +7,7 @@ File framework and templates are from 'dailykindle' https://github.com/pelletier
 
 
 How to use:
+
 1. Put your user-name and password in a file outside the repo in two lines.
 2. Specify the location of that file in send.py, let p = open('FILE_LOCATION','r')
 3. Put the rss resource in sources.txt line by line.
