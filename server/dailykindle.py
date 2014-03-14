@@ -24,9 +24,6 @@ def build(feeds_urls, output_dir, max_old=None):
 
     # Give the feeds URLs to Feedparser to have nicely usable feed objects.
     feeds = [feedparser.parse(feed_url) for feed_url in feeds_urls]
-    #print "KKKKKKKKKKKKKKKKKKKKK"
-    #for item in feeds:
-    #    print item
     # Parse the feeds and grave useful information to build a structure
     # which will be passed to the templates.
     data = []
@@ -61,7 +58,6 @@ def build(feeds_urls, output_dir, max_old=None):
                		'play_order': play_order,
                 	'title': entry.title,
                 	'description': entry.description,
-                	#'content': entry.content[0].value.encode('utf-8'),
                 	'content': entry.content[0].value,
             	}
 	    except AttributeError:
@@ -70,14 +66,7 @@ def build(feeds_urls, output_dir, max_old=None):
                         'play_order': play_order,
                         'title': entry.title,
                         'description': entry.description,
-                        #'content': entry.content[0].value.encode('utf-8'),
-                        #'content': entry.content[0].value,
                 }
-
-            #print "-----------"
-            #print entry.content[0].value.encode('utf-8')
-            #print '/n'.join(local_entry['content']).encode('utf-8')
-            #print local_entry['content'][0].value.encode('utf-8')
             local['entries'].append(local_entry)
 
         data.append(local)
@@ -135,7 +124,6 @@ python dailykindle.py <output dir> <day|week> <kindle_gen> <feed_url_1> [<feed_u
         length = timedelta(1)
     elif argv[2] == 'week':
         length = timedelta(7)
-        #print("*********week***************")
 
     print("Running DailyKindle...")
     print("-> Generating files...")
