@@ -1,7 +1,9 @@
 KindleRSSDaily
 ===
+Author Shuai Lu (sl988@cornell.edu)
 
 Code framework and templates are from 'dailykindle' https://github.com/pelletier/dailykindle.
+kindlegen is the deafault conversion tool of amazon for kindle (V2.9).
 
 1. Modified it to support Chinese.
 2. Updated the out-dated API of feedparder
