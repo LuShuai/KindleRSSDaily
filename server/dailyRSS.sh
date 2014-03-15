@@ -1,2 +1,2 @@
-rm /home/ec2-user/RSSServer/temp/*
+rm ../temp/*
 python send.py
