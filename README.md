@@ -1,6 +1,7 @@
 KindleRSSDaily
 ===
 Author Shuai Lu (sl988@cornell.edu)
+
 KindleRSSDaily helps you convert RSS resources to mobi and deliver it to your kindle through email evryday.
 
 
