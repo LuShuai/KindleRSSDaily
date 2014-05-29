@@ -10,6 +10,7 @@ feeds = f.readlines()
 f.close()
 
 dailykindle.build(feeds, '../temp/', timedelta(1))
+os.system("cd ../temp/; for i in *.html; do bash ../server/addimages.sh $i; done")
 dailykindle.mobi('../temp/daily.opf', '../kindlegen/kindlegen')
 
 date = time.strftime("%Y-%m-%d")
