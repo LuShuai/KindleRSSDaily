@@ -9,7 +9,7 @@ Code framework and templates are from 'dailykindle' https://github.com/pelletier
 kindlegen is the deafault conversion tool of amazon for kindle (V2.9).
 
 1. Modified it to support Chinese.
-2. Updated the out-dated API of feedparder
+2. Updated the out-dated API of feedparser
 
 
 How to use:
